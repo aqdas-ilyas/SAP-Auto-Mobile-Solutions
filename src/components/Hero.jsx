@@ -7,6 +7,15 @@ const STATS = [
   { value: 1000, suffix: '+', label: 'Enterprises' },
 ]
 
+/* Background sparkle positions (percent) – spread across hero for twinkle effect */
+const SPARKLES = [
+  { left: 8, top: 12 }, { left: 22, top: 8 }, { left: 38, top: 18 }, { left: 55, top: 14 }, { left: 72, top: 22 }, { left: 88, top: 16 },
+  { left: 12, top: 28 }, { left: 28, top: 32 }, { left: 45, top: 26 }, { left: 62, top: 34 }, { left: 78, top: 30 }, { left: 92, top: 38 },
+  { left: 5, top: 48 }, { left: 18, top: 52 }, { left: 35, top: 44 }, { left: 52, top: 58 }, { left: 68, top: 50 }, { left: 82, top: 54 },
+  { left: 10, top: 68 }, { left: 25, top: 72 }, { left: 42, top: 64 }, { left: 58, top: 78 }, { left: 75, top: 70 }, { left: 90, top: 76 },
+  { left: 15, top: 88 }, { left: 48, top: 92 }, { left: 65, top: 85 }, { left: 85, top: 90 },
+]
+
 function animateValue(el, start, end, duration) {
   if (!el) return
   const startTime = performance.now()
@@ -53,6 +62,20 @@ export default function Hero() {
       <div className="hero-bg">
         <div className="hero-gradient" />
         <div className="hero-grid" />
+        <div className="hero-sparkles" aria-hidden="true">
+          {SPARKLES.map((s, i) => (
+            <span
+              key={i}
+              className={`sparkle ${i % 4 === 0 ? 'sparkle-accent' : ''}`}
+              style={{
+                left: `${s.left}%`,
+                top: `${s.top}%`,
+                animationDelay: `${i * 0.18}s`,
+                animationDuration: `${3.5 + (i % 3) * 0.5}s`,
+              }}
+            />
+          ))}
+        </div>
         <div className="hero-orb hero-orb-1" />
         <div className="hero-orb hero-orb-2" />
         <div className="hero-orb hero-orb-3" />

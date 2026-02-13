@@ -1,0 +1,8 @@
+# Prevent caching of HTML and version file so updates are seen immediately
+# (Netlify uses this file when deployed from the build output)
+
+/index.html
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/version.json
+  Cache-Control: no-cache, no-store
