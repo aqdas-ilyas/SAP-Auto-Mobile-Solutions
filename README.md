@@ -1,6 +1,6 @@
-# SAP Auto Mobile Solutions – Website
+# SAP Solutions – Website
 
-A **Vite + React** single-page website for **SAP Auto Mobile Solutions**, with landing page, privacy policy, React Router, and the same professional design and animations as before.
+A **Vite + React** single-page website for **SAP Solutions**, with landing page, privacy policy, React Router, and the same professional design and animations as before.
 
 ## Stack
 

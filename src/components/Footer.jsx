@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="footer-brand">
             <Link to="/" className="logo">
               <span className="logo-icon">SAP</span>
-              <span className="logo-text">Auto Mobile Solutions</span>
+              <span className="logo-text">Solutions</span>
             </Link>
             <p className="footer-tagline">Enterprise mobility and automotive digital transformation.</p>
           </div>
@@ -31,7 +31,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} SAP Auto Mobile Solutions. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} SAP Solutions. All rights reserved.</p>
         </div>
       </div>
     </footer>

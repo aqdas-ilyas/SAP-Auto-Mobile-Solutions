@@ -3,8 +3,8 @@ import { useEffect } from 'react'
 
 export default function PrivacyPage() {
   useEffect(() => {
-    document.title = 'Privacy Policy | SAP Auto Mobile Solutions'
-    return () => { document.title = 'SAP Auto Mobile Solutions | Enterprise Mobility & Digital Transformation' }
+    document.title = 'Privacy Policy | SAP Solutions'
+    return () => { document.title = 'SAP Solutions | Enterprise Mobility & Digital Transformation' }
   }, [])
 
   return (
@@ -20,7 +20,7 @@ export default function PrivacyPage() {
       <div className="container privacy-content">
         <h2>1. Introduction</h2>
         <p>
-          SAP Auto Mobile Solutions (“we,” “our,” or “us”) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our website and related services. Please read this policy carefully.
+          SAP Solutions (“we,” “our,” or “us”) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our website and related services. Please read this policy carefully.
         </p>
 
         <h2>2. Information We Collect</h2>
@@ -100,7 +100,7 @@ export default function PrivacyPage() {
           If you have questions about this Privacy Policy or our data practices, please contact us at:
         </p>
         <p>
-          <strong>SAP Auto Mobile Solutions</strong><br />
+          <strong>SAP Solutions</strong><br />
           Email: <a href="mailto:privacy@sapautomobile.com">privacy@sapautomobile.com</a><br />
           Or use our <Link to="/#contact">contact form</Link>.
         </p>

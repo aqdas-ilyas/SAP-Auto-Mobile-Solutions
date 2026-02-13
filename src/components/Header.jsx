@@ -25,7 +25,7 @@ export default function Header() {
       <nav className="nav container">
         <Link to="/" className="logo">
           <span className="logo-icon">SAP</span>
-          <span className="logo-text">Auto Mobile Solutions</span>
+          <span className="logo-text">Solutions</span>
         </Link>
         <button
           type="button"
